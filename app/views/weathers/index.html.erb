@@ -13,7 +13,13 @@
 </section>
 
 <br/>
+<br/>
 
-<%= line_chart @weather_data %>
+<%= line_chart @weather_data, xtitle: "Time", ytitle: "Temperature (Celsius)" %>
+
+<br/>
+<br/>
+<br/>
+<br/>
 
 <%= react_component("Weather", {weather: @weathers}) %>

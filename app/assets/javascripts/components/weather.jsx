@@ -1,12 +1,12 @@
 class Weather extends React.Component {
-	
+
   render () {
     return (<div className="table-container container">
       <table className="table is-bordered is-striped is-narrow is-fullwidth">
 		  <thead>
 		    <tr>
 		      <th>Date</th>
-		      <th>Temp</th>
+		      <th>Temperature</th>
 		    </tr>
 		  </thead>
 		  <tbody>
