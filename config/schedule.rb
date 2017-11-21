@@ -20,6 +20,6 @@
 # Learn more: http://github.com/javan/whenever
 
 
-every 1.minute do
+every :hour do
   rake "weather_task:get_weather", :environment => "development"
 end
