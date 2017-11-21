@@ -1,7 +1,19 @@
-<p id="notice"><%= notice %></p>
 
-<h1>The weather for Inwood, NY every hour</h1>
+<section class="hero is-medium is-danger is-bold">
+  <div class="hero-body">
+    <div class="container">
+      <h1 class="title">
+        Weather Now
+      </h1>
+      <h2 class="subtitle">
+        The weather for Inwood, Manhattan every hour
+      </h2>
+    </div>
+  </div>
+</section>
 
 <br/>
+
+<%= line_chart Weather.count %>
 
 <%= react_component("Weather", {weather: @weathers}) %>
