@@ -53,7 +53,7 @@ group :development do
   gem 'spring'
   gem 'spring-watcher-listen', '~> 2.0.0'
 
-  gem 'whenever', require: false
+  #gem 'whenever', require: false
 end
 
 # heroku postgres db
