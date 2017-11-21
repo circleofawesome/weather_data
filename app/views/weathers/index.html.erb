@@ -1,27 +1,7 @@
 <p id="notice"><%= notice %></p>
 
-<h1>Weathers</h1>
+<h1>The weather for Inwood, NY every hour</h1>
 
-<table class="table is-bordered is-striped is-narrow is-fullwidth">
-  <thead>
-    <tr>
-      <th>Date</th>
-      <th>Temp</th>
-    </tr>
-  </thead>
-
-  <tbody>
-    <% @weathers.each do |weather| %>
-      <tr>
-        <td><%= weather.date %></td>
-        <td><%= weather.temp %></td>
-      </tr>
-    <% end %>
-  </tbody>
-</table>
-
-<br>
+<br/>
 
 <%= react_component("Weather", {weather: @weathers}) %>
-
-<%= link_to 'New Weather', new_weather_path %>
