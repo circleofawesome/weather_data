@@ -15,7 +15,6 @@ namespace :weather_task do
       return weather["main"]["temp"]-273.15
     end
 
-    #weather_now=my_weather
     Weather.create(:date=>Time.now, :temp=>my_weather)
     #Weather.create(:date=>Time.now, :temp=>300.64)
   end
