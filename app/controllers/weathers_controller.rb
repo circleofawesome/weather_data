@@ -5,6 +5,11 @@ class WeathersController < ApplicationController
   # GET /weathers.json
   def index
     @weathers = Weather.all
+    @weather_data={}
+    @weathers.each do |weather|
+      @weather_data[weather.date]=weather.temp
+    end
+    #p @weather_data
   end
 
   # GET /weathers/1
